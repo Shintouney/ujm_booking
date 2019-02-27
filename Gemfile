@@ -2,11 +2,10 @@ source 'https://rubygems.org'
 
 ruby '2.5.3'
 
+gem "administrate"
 gem 'aasm'
 gem 'awesome_print'
-gem 'activeadmin'
-gem 'activeadmin_addons'
-gem 'active_admin_flat_skin'
+gem 'bootsnap'
 gem 'dry-initializer'
 gem 'rails', '~> 5.2.1'
 gem 'pg'
@@ -18,6 +17,7 @@ gem 'turbolinks'
 
 group :development, :test do
   gem 'byebug'
+  gem 'dotenv-rails'
 end
 
 group :development do
