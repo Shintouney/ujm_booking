@@ -1,5 +1,6 @@
 class Booking < ApplicationRecord
   include AASM
+  has_many :categories
 
   aasm column: :status do
     state :pending, initial: true

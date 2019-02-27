@@ -2,4 +2,6 @@
   h4 Formulaire de reservation
   = simple_form_for Booking.new do |f|
     = f.input :email
-    = f.input :blabla, as: :check_boxes, collection: Booking.all.pluck(:name)
+    = f.association :categories, as: :check_boxes
+  h2 products
+  h3 find products by categories
