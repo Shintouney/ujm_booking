@@ -15,6 +15,9 @@ gem 'slim'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'turbolinks'
+gem 'bootstrap'
+gem 'jquery-rails'
+gem 'simple_form'
 
 group :development, :test do
   gem 'byebug'
