@@ -1,0 +1,5 @@
+.container
+  h4 Formulaire de reservation
+  = simple_form_for Booking.new do |f|
+    = f.input :email
+    = f.input :blabla, as: :check_boxes, collection: Booking.all.pluck(:name)
