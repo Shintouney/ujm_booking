@@ -10,7 +10,8 @@ class BookingDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     student:             Field::BelongsTo,
     reservation_end_at:  Field::DateTime,
-    created_at:          Field::DateTime
+    created_at:          Field::DateTime,
+    products:            Field::HasMany
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -21,7 +22,8 @@ class BookingDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :student,
     :reservation_end_at,
-    :created_at
+    :created_at,
+    :products
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -29,7 +31,8 @@ class BookingDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :created_at,
     :student,
-    :reservation_end_at
+    :reservation_end_at,
+    :products
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -37,7 +40,8 @@ class BookingDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :student,
-    :reservation_end_at
+    :reservation_end_at,
+    :products
   ].freeze
 
   # Overwrite this method to customize how bookings are displayed
