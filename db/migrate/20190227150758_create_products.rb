@@ -4,6 +4,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.string :name
 
       t.timestamps
+      t.references :category, references: :category
     end
   end
 end

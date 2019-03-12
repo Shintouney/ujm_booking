@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(version: 2019_02_27_162102) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "category_id"
+    t.index ["category_id"], name: "index_products_on_category_id"
   end
 
 end

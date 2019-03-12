@@ -12,6 +12,7 @@ class ProductDashboard < Administrate::BaseDashboard
     name: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
+    category: Field::BelongsTo
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -24,6 +25,7 @@ class ProductDashboard < Administrate::BaseDashboard
     :name,
     :created_at,
     :updated_at,
+    :category
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -33,6 +35,7 @@ class ProductDashboard < Administrate::BaseDashboard
     :name,
     :created_at,
     :updated_at,
+    :category
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -40,6 +43,7 @@ class ProductDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :name,
+    :category
   ].freeze
 
   # Overwrite this method to customize how products are displayed
