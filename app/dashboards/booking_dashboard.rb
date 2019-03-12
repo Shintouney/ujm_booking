@@ -8,10 +8,9 @@ class BookingDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    created_at:          Field::DateTime,
-    updated_at:          Field::DateTime,
     student:             Field::BelongsTo,
-    reservation_end_at:  Field::DateTime
+    reservation_end_at:  Field::DateTime,
+    created_at:          Field::DateTime
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -20,17 +19,15 @@ class BookingDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :created_at,
-    :updated_at,
     :student,
-    :reservation_end_at
+    :reservation_end_at,
+    :created_at
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :created_at,
-    :updated_at,
     :student,
     :reservation_end_at
   ].freeze

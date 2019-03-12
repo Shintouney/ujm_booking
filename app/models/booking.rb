@@ -1,6 +1,8 @@
 class Booking < ApplicationRecord
   include AASM
-  has_many :categories
+  has_many :booking_products
+  has_many :products, through: :booking_products
+  belongs_to :student
 
   aasm column: :status do
     state :pending, initial: true
