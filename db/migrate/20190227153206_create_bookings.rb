@@ -4,6 +4,7 @@ class CreateBookings < ActiveRecord::Migration[5.2]
       t.string :email
 
       t.timestamps
+      t.references :student, references: :student
     end
   end
 end
