@@ -8,10 +8,11 @@ class BookingDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    student:             Field::BelongsTo,
-    reservation_end_at:  Field::DateTime,
-    created_at:          Field::DateTime,
-    products:            Field::HasMany
+    student:               Field::BelongsTo,
+    reservation_start_at:  Field::DateTime,
+    reservation_end_at:    Field::DateTime,
+    created_at:            Field::DateTime,
+    products:              Field::HasMany
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -21,6 +22,7 @@ class BookingDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :student,
+    :reservation_start_at,
     :reservation_end_at,
     :created_at,
     :products
@@ -29,9 +31,10 @@ class BookingDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :created_at,
     :student,
+    :reservation_start_at,
     :reservation_end_at,
+    :created_at,
     :products
   ].freeze
 
@@ -40,6 +43,7 @@ class BookingDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :student,
+    :reservation_start_at,
     :reservation_end_at,
     :products
   ].freeze
