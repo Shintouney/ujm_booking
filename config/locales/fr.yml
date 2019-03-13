@@ -2,6 +2,28 @@ fr:
   booking:
     errors:
       reservation_start_at: "La date de début de réservation est invalide."
+  helpers:
+    label:
+      product:
+        name: "Nom"
+        created_at: "Créer le"
+        updated_at: "Dernière modification"
+        category: "Catégorie"
+      booking:
+        reservation_start_at: "Début de reservation"
+        reservation_end_at: "Fin de reservation"
+        created_at: "Créer le"
+        products: "Produits"
+        student: "Etudiant"
+      category:
+        created_at: "Créer le"
+        name: "Nom"
+        updated_at: "Dernière modification"
+      student:
+        first_name: "Prenom"
+        last_name: "Nom"
+        created_at: "Créer le"
+        updated_at: "Dernière modification"
   activerecord:
     models:
       booking:
@@ -10,9 +32,18 @@ fr:
       student:
         one: "Etudiant"
         other: "Etudiants"
+      product:
+        one: "Produit"
+        other: "Produits"
+      attributes:
+        booking:
+          reservation_start_at: "lol"
+          reservation_end_at: "lool"
     attributes:
       booking:
         reservation_start_at: "Date de début de reservation"
         reservation_end_at: "Date de fin de reservation"
-        products: "Produits"
+        products:
+          one: "Produit"
+          other: "Produits"
         student: "Etudiant"
