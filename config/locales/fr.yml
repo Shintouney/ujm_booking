@@ -39,8 +39,8 @@ fr:
         other: "Produits"
       attributes:
         booking:
-          reservation_start_at: "lol"
-          reservation_end_at: "lool"
+          reservation_start_at: "Date de début de reservation"
+          reservation_end_at: "Date de fin de reservation"
     attributes:
       booking:
         reservation_start_at: "Date de début de reservation"
