@@ -1,0 +1,4 @@
+fr-FR:
+  booking:
+    errors:
+      reservation_start_at: "La date de début de réservation est invalide."
