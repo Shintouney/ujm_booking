@@ -2,3 +2,17 @@ fr:
   booking:
     errors:
       reservation_start_at: "La date de début de réservation est invalide."
+  activerecord:
+    models:
+      booking:
+        one: "réservation"
+        other: "réservations"
+      student:
+        one: "Etudiant"
+        other: "Etudiants"
+    attributes:
+      booking:
+        reservation_start_at: "Date de début de reservation"
+        reservation_end_at: "Date de fin de reservation"
+        products: "Produits"
+        student: "Etudiant"
