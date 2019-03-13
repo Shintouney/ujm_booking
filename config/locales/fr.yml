@@ -13,22 +13,24 @@ fr:
         reservation_start_at: "Début de reservation"
         reservation_end_at: "Fin de reservation"
         created_at: "Créer le"
-        products: "Produits"
-        student: "Etudiant"
+        products:   "Produits"
+        student:    "Etudiant"
       category:
         created_at: "Créer le"
-        name: "Nom"
+        name:       "Nom"
         updated_at: "Dernière modification"
       student:
         first_name: "Prenom"
-        last_name: "Nom"
+        last_name:  "Nom"
         created_at: "Créer le"
         updated_at: "Dernière modification"
+    submit:
+      create: "Créer un(e) %{model}"
   activerecord:
     models:
       booking:
-        one: "réservation"
-        other: "réservations"
+        one: "Réservation"
+        other: "Réservations"
       student:
         one: "Etudiant"
         other: "Etudiants"
